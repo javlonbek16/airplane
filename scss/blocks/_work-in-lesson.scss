@@ -1,0 +1,32 @@
+body {
+  background-image: url("../../img/istockphoto-525363458-170667a.jpg");
+  background-size: cover;
+}
+
+.cloud:active {
+  animation-play-state: paused;
+}
+.cloud {
+  position: absolute;
+  top: 0px;
+  right: -500px;
+  animation: cloud 10s linear 0s infinite reverse;
+  z-index: 99;
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cloud {
+  from {
+    right: -500px;
+  }
+  to {
+    right: 102%;
+  }
+}
